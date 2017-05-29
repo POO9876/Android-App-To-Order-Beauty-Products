@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_action_order"
+        android:id="@+id/orderimageView"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_action_view"
+        android:id="@+id/viewImageView"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Make Order"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/orderimageView"
+        android:layout_alignStart="@+id/orderimageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="View Orders"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/viewImageView"
+        android:layout_alignStart="@+id/viewImageView" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/confirmImageView"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_action_deliver"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Confirm Delivery"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/confirmImageView"
+        android:layout_alignStart="@+id/confirmImageView" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_action_complain"
+        android:id="@+id/complainImageView"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Complains"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/complainImageView"
+        android:layout_alignStart="@+id/complainImageView" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_action_mail"
+        android:id="@+id/contactImageView"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact Us"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/contactImageView"
+        android:layout_alignStart="@+id/contactImageView" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_action_rate"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:id="@+id/rateImageView"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rate Us"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/rateImageView"
+        android:layout_alignEnd="@+id/rateImageView" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/ic_action_call"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_below="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginTop="54dp" />
+
+
+</RelativeLayout>
